@@ -38,6 +38,7 @@ pnpm dev
 Visit `http://localhost:5173` (or the port specified by Vite) to view the application.
 
 ## Structure
+
 - `src/App.tsx`: Worker mobile application.
 - `src/supervisor.tsx`: Supervisor dashboard.
 - `src/main.tsx`: App entry point.
@@ -45,3 +46,7 @@ Visit `http://localhost:5173` (or the port specified by Vite) to view the applic
 
 ## Configuration
 See `.env.example` for environment variable templates.
+## COSTING
+<img width="1024" height="937" alt="image" src="https://github.com/user-attachments/assets/ceb17bbd-6c1a-4ee9-8eb0-33c5f5e64a1e" />
+
+
