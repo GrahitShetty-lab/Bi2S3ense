@@ -1,0 +1,11 @@
+{
+  "title": "Bi₂S₃ense",
+  "description": "Monitors industrial workers' H2S exposure via QR-coded badges and colorimetric strips, providing real-time safety status and exposure trends.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

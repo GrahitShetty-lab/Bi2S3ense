@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-navy-900: #060e1e;
+  --color-navy-800: #0a1628;
+  --color-navy-700: #0f2044;
+  --color-navy-600: #16305e;
+  --color-navy-500: #1e4080;
+  --color-navy-border: #1e3a6e;
+
+  --color-blue-primary: #1d4ed8;
+  --color-blue-light: #3b82f6;
+  --color-blue-dim: #1e40af;
+
+  --color-green-safe: #16a34a;
+  --color-green-light: #22c55e;
+  --color-green-dim: #14532d;
+
+  --color-amber-warn: #d97706;
+  --color-amber-light: #f59e0b;
+  --color-amber-dim: #78350f;
+
+  --color-red-danger: #dc2626;
+  --color-red-light: #ef4444;
+  --color-red-dim: #7f1d1d;
+
+  --color-slate-fg: #f0f4ff;
+  --color-slate-muted: #94a3b8;
+  --color-slate-dim: #475569;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', system-ui, sans-serif;
+  background-color: #060e1e;
+  color: #f0f4ff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbars by default */
+* {
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scrollbar visible while scrolling */
+.scroll-visible {
+  scrollbar-width: thin;
+  scrollbar-color: #1e3a6e transparent;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+
+@keyframes scan-line {
+  0% { top: 10%; }
+  50% { top: 85%; }
+  100% { top: 10%; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes step-fill {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 1.5s ease-out infinite;
+}
+
+.animate-scan-line {
+  animation: scan-line 2s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 1.5s linear infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.4s ease-out both;
+}
